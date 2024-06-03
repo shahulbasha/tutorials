@@ -60,6 +60,7 @@
         <module>mockito-2</module>
         <module>testing-techniques</module>
         <module>gatling-java</module>
+        <module>mockito-3</module>
     </modules>
 
 </project>
