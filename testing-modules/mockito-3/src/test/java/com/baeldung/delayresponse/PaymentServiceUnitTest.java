@@ -1,9 +1,7 @@
 package com.baeldung.delayresponse;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.get;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.concurrent.TimeUnit;
@@ -23,9 +21,6 @@ public class PaymentServiceUnitTest {
 
     @Mock
     PaymentService paymentService;
-
-    @RegisterExtension
-    static WireMockExtension wireMockRule = WireMockExtension.newInstance().build();
 
     @Test
     public void whenProcessingPayment_thenDelayResponseUsingThreadSleep(){
